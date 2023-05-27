@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Booleans</h1>
+
+<div id="booleans">
+  <% @booleans.each do |boolean| %>
+    <%= render boolean %>
+    <p>
+      <%= link_to "Show this boolean", boolean %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New boolean", new_boolean_path %>

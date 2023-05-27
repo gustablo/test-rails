@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Floaters</h1>
+
+<div id="floaters">
+  <% @floaters.each do |floater| %>
+    <%= render floater %>
+    <p>
+      <%= link_to "Show this floater", floater %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New floater", new_floater_path %>

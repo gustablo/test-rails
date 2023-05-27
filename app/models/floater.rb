@@ -1,0 +1,2 @@
+class Floater < ApplicationRecord
+end

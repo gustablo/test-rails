@@ -1,0 +1,22 @@
+<%= form_with(model: floater) do |form| %>
+  <% if floater.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(floater.errors.count, "error") %> prohibited this floater from being saved:</h2>
+
+      <ul>
+        <% floater.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :amount, style: "display: block" %>
+    <%= form.text_field :amount %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

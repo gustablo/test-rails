@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @floater %>
+
+<div>
+  <%= link_to "Edit this floater", edit_floater_path(@floater) %> |
+  <%= link_to "Back to floaters", floaters_path %>
+
+  <%= button_to "Destroy this floater", @floater, method: :delete %>
+</div>

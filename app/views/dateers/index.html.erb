@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dateers</h1>
+
+<div id="dateers">
+  <% @dateers.each do |dateer| %>
+    <%= render dateer %>
+    <p>
+      <%= link_to "Show this dateer", dateer %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dateer", new_dateer_path %>

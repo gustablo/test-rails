@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dateer %>
+
+<div>
+  <%= link_to "Edit this dateer", edit_dateer_path(@dateer) %> |
+  <%= link_to "Back to dateers", dateers_path %>
+
+  <%= button_to "Destroy this dateer", @dateer, method: :delete %>
+</div>

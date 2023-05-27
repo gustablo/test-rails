@@ -1,0 +1,2 @@
+class Dateer < ApplicationRecord
+end

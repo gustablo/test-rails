@@ -1,0 +1,13 @@
+<h1>Products</h1>
+
+<div id="products">
+    <% @products.each do |p| %>
+        <%= render p %>
+
+        <%= link_to "View product", p %>
+
+        <hr>
+    <% end %>
+</div>
+
+<%= link_to "New product", products_new_path %>
